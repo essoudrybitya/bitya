@@ -1,0 +1,35 @@
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#header{
+    background: url(./img/legumes.jpeg);
+}
+
+img{
+    width: 286px;
+    height: 150px;
+}
+
+h1{
+    color: crimson;
+}
+
+#champ{
+    width: 286px;
+    height: 250px;
+}
+
+#shoppingCart{
+    border: lightgray solid 1px;
+    width: 100%;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }

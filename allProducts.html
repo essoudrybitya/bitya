@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img" href="img/legumes.jpeg" />
+    <title>My Supermarket</title>
+</head>
+
+<body onload="categoryParamURL()">
+
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MENU</a>
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="allProducts.html?cat=0" class="nav-link">Fruits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="allProducts.html?cat=1" class="nav-link">Vegetables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="allProducts.html?cat=2" class="nav-link">Herbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="allProducts.html?cat=3" class="nav-link">Detergents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="allProducts.html?cat=4" class="nav-link">Baths</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header" class="text-center">
+        <br><br>
+        <h1 class="display-3 text-center">My Supermarket !</h1><br>
+        <h3 class="text-center">Want to do your shopping online ?</h3>
+        <br><br><br>
+    </div>
+
+    <br><br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-outline-info" onclick="comeBack()">Back</button>
+    </div>
+
+    <div class="row">
+        <!-- Ads -->
+        <div class="col">
+            <h1 class="text-center">Advertising:</h1>
+            <br><br>
+            <div class="card" style="width: 18rem;">
+                <h3>Sale Item Of Week !!!</h3>
+                <img id="champ" src="./img/champignon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Champignons de Paris ~~ 0.75€</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- All products -->
+        <div class="col-7">
+            <h1 id="title" class="text-center"></h1>
+            <div class="row m-auto" id="display">
+            </div>
+        </div>
+
+        <!-- Shopping cart -->
+        <div class="col" id="shoppingCart">
+            <br>
+            <div class="d-grid gap-2 col-15 mx-auto">
+                <button id="cart1" type="button" class="btn btn-warning btn-lg" onclick="displayCart()"> My Shopping Cart</button>
+            </div>
+
+            <div>
+                <div class="text-center" id="2btns">
+        
+                </div>
+                <div id="cart" >
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
